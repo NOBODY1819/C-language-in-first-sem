@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\.."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"PRC.C": "cpp",
+			"A.C": "cpp",
+			"string.h": "c"
+		}
+	}
+}
