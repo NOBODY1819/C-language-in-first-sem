@@ -1,24 +1,26 @@
 #include<stdio.h>
-int evenodd(int x);
+void fct(int x);
+
 int main()
 {
-     int a;
-    printf("programe for even/odd\n");
-    printf("Enter the number :");
+    int a;
+printf("Enter a number :");
     scanf("%d",&a);
-     evenodd(a);
+
+fct(a);
 }
+               //function with no return but argument.
+void fct(int x)
+{  printf(" In function \n");
 
-int evenodd(int x)
-{
-
-    if (x%2==0)
+    int i,f=1;
+    
+    for ( i = 1; i <= x; i++)
     {
-        printf("Number is even");
+        f=f*i;    
     }
-    else{
-        printf("Number is odd");
-    }
-    
-    
+
+    printf("Factorial of %d is : %d\n",x,f);
+    printf("End of function\n");
+
 }
